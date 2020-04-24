@@ -1,0 +1,31 @@
+{
+  "name": "sass-basis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "concurrently --kill-others \"npm run watch\" \"npm run test\"",
+    "build": "node-sass test --output test",
+    "watch": "nodemon -e scss -x \"npm run build\"",
+    "test": "http-server test -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/venya/sass-basis.git"
+  },
+  "author": "Veniamin Zolotukhin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/venya/sass-basis/issues"
+  },
+  "homepage": "https://github.com/venya/sass-basis#readme",
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "http-server": "^0.12.1",
+    "node-sass": "^4.14.0",
+    "nodemon": "^2.0.3"
+  }
+}

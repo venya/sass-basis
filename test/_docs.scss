@@ -1,0 +1,27 @@
+// 
+// Documentation specific styling
+// (not part of the framework)
+
+body {
+	margin: auto 20%;
+	font-family: Helvetica Neue, Helvetica, Arial;
+}
+
+h1,
+h2,
+h3 {
+	margin-top: 2em;
+	margin-bottom: 1ex;
+}
+
+
+p {
+	margin-bottom: 1em;
+}
+
+kbd {
+	padding: 2px 4px;
+	background: #b1e8ff;
+	color: #387c98;
+	border-radius: 2px;
+}

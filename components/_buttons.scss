@@ -1,0 +1,42 @@
+// 
+// Buttons
+
+
+$btn-border-width: 0 !default;
+$btn-height: 26px !default;
+$btn-hpadding: 1ex !default;
+$btn-radius: 3px !default;
+
+$btn-default-bg: #eee !default;
+$btn-default-text: inherit !default;
+
+
+.btn {
+	display: inline-block;
+	border-width: $btn-border-width;
+	border-radius: $btn-radius;
+	font-family: inherit;
+	font-size: inherit;
+	text-decoration: none;
+	text-align: center;
+	box-sizing: border-box;
+	cursor: pointer;
+	white-space: nowrap;
+	line-height: $btn-height;
+	padding: 0 $btn-hpadding;
+	@include no-select;
+	@include no-hilite;
+
+
+	&-default {
+		background: $btn-default-bg;
+		color: $btn-default-text;
+	}
+
+
+	&-block {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+}
